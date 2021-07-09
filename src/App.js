@@ -4,7 +4,8 @@ import List from './components/List.js'
 import Item from './components/Item'
 import TodoForm from './components/TodoForm'
 import Modal from './components/Modal'
-
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 
 
 const SAVED_ITEMS = "savedItems"
