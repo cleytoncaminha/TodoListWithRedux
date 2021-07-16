@@ -1,4 +1,3 @@
-import { func } from "prop-types";
 import Item from "../components/Item";
 
 export function addItem(text){
