@@ -5,11 +5,14 @@ export default (state= [],action) => {
             return [...state, action.payload]
         case "DELETE_ITEM":
             return state.filter(item=> item.id != action.payload)
-        case "CHAGE_DONE":
+        case "CHANGE_DONE":
             return state.map(item=>{
                 if(item.id == action.payload){
                     item.done = !item.done
                 }
+              return item;
             })
+            default:
+                return state
     }
 }

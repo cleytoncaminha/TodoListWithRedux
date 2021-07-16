@@ -1,4 +1,4 @@
-import Item from "../components/Item";
+import Item from '../components/Item';
 
 export function addItem(text){
     const item = new Item(text);
