@@ -24,7 +24,7 @@ function loadState(){
 }
 const store = createStore(listReducer, loadState());
 store.subscribe(()=>{
-    persistStateState(store.getState())
+    persistState(store.getState())
 })
 
 function App(){
